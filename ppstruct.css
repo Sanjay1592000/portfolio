@@ -1,0 +1,299 @@
+body
+{
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 209, 248)
+}
+@keyframes transition
+{
+    from
+    {
+       opacity: 0;
+       transform: translateY(-50px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes transition1
+{
+    from
+    {
+       opacity: 0;
+       transform: translateY(-100px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes transition2
+{
+    from
+    {
+       opacity: 0;
+       transform: translateY(-15px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+div
+{
+    position: relative;
+}
+.first
+{
+    width: 1366px;
+    height: 250px;
+    left: -8px;
+    top: -10px;
+    background: #910057;
+    box-shadow: inset 10px 0px 25px rgba(0, 0, 0, 0.5);
+}
+.second
+{
+    width: 800px;
+    height: 375px;
+    left: 274px;
+    background: #910057;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 10px 0px 25px rgba(0, 0, 0, 0.5);
+}
+.contain
+{
+    transform: translateY(0px);
+    transition: transform 1s ease-in-out;
+}
+.contain:hover
+{
+    transform: translateY(-150px);
+    transition: transform 1s ease-in-out;
+}
+.third
+{
+    top: 50px;
+    left: -10px;
+    width: 1366px;
+    height: 100px;
+    background: #910057;
+    box-shadow: inset 10px 0px 25px rgba(0, 0, 0, 0.5);
+}
+p
+{
+    position: relative;
+}
+h3
+{
+    line-height: 12px;
+}
+.mypic
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 268px;
+    top: 17.5px;
+    border: 5px solid #FF0099;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    animation: transition 600ms;
+}
+.intro
+{
+    width: 231px;
+    height: 48px;
+    left: 509px;
+    top: -200px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #ffffff;
+    animation: transition1 1000ms;
+}
+.content
+{
+    width: 486px;
+    height: 81px;
+    left: 509px;
+    top: -225px;
+    font-size: 16px;
+    line-height: 34px;
+    color: #ffffff;
+    animation: transition1 1200ms;
+}
+section
+{
+    position: relative;
+    display: block;
+}
+.csi
+{
+    width: 575px;
+    height: 52px;
+    left: 125px;
+    top: 12.5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    animation: transition2 1400ms;
+}
+.project
+{
+    width: 575px;
+    height: 52px;
+    left: 125px;
+    top: 105px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    animation: transition2 1400ms;
+}
+.lang
+{
+    width: 575px;
+    height: 52px;
+    left: 125px;
+    top: 135px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    animation: transition2 1400ms;
+}
+.hob
+{
+    width: 575px;
+    height: 52px;
+    left: 125px;
+    top: 165px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    animation: transition2 1400ms;
+}
+ul
+{
+    position: relative;
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 425px;
+    animation: transition2 1400ms;
+}
+ul li
+{
+    display: inline;
+    padding-left: 29px;
+}
+img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    transform: rotateX(0);
+    transition: transform .5s ease-in-out;
+}
+img:hover
+{
+    transform: rotateY(180deg);
+    transition: transform 1.5s ease-in-out;
+}
+.mypic:hover
+{
+    transform: none;
+}
+@media only screen and (max-width:400px)
+{
+    p 
+    {
+        font-size: 12px;
+    }
+    .first
+    {
+        width: 400px;
+        height: 425px;
+    }
+    .second
+    {
+        width: 360px;
+        height: 360px;
+    }
+    .third
+    {
+        width: 400px;
+        height: 100px;
+    }
+    .mypic
+    {
+        width: 150px;
+        height: 150px;
+        left: 20px;
+        top: 24px;
+        border-radius: 75px;
+    }
+    .intro
+    {
+        width: 200px;
+        height: 41px;
+        left: 200px;
+        top: -85px;
+    }
+    .content
+    {
+        width: 309px;
+        height: 194px;
+        left: 30px;
+        top: -37.5px;
+    }
+    .second
+    {
+        width: 320px;
+        height: 400px;
+        left: 30px;
+        top: 0px;
+    }
+    .csi, .project, .lang, .hob
+    {
+        left: 15px;
+        width: 305px;
+    }
+    .project
+    {
+        top: 150px;
+    }
+    .lang
+    {
+        top: 200px;
+    }
+    .hob
+    {
+        top: 250px;
+    }
+    .contain:hover
+    {
+        transform: translateY(-185px);
+        transition: transform 1s ease-in-out;
+    }
+    ul 
+    {
+        padding-top: 25px;
+        padding-left: 0px;
+    }
+    ul li
+    {
+        display: inline;
+        padding-left: 18px;
+    }
+    img 
+    {
+        width: 50px;
+        height: 50px;
+    }
+}
