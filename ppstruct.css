@@ -84,7 +84,6 @@ body
     min-width: 100%;
     min-height: 50px;
     background: #910057;
-    padding: 1rem 0rem;
     box-shadow: inset 10px 0px 25px rgba(0, 0, 0, 0.5);
 }
 .mypic
@@ -166,8 +165,8 @@ img:hover
 {
     img 
     {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 }
 @media only screen and (min-width:1532px)
